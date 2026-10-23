@@ -30,3 +30,12 @@ testpaths = ["tests"]
 [tool.ruff]
 line-length = 88
 target-version = "py314"
+
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "sqlalchemy",
+    "alembic",
+    "psycopg[binary]",
+    "pydantic-settings",
+]
